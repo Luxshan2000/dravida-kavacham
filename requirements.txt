@@ -1,0 +1,5 @@
+torch==2.5.1
+transformers==4.47.1
+pandas==2.2.3
+scikit-learn==1.6.0
+SentencePiece==0.2.0
