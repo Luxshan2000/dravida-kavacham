@@ -1,0 +1,165 @@
+
+Dev Malayalam Analysis:
+==================================================
+
+1. Basic Statistics:
+Total samples: 629
+
+Null Values Check:
+Text     0
+Class    0
+dtype: int64
+
+Unique Values per Column:
+Text: 629 unique values
+Class: 2 unique values
+
+Class Distribution:
+Non-Abusive: 326 (51.83%)
+Abusive: 303 (48.17%)
+
+2. Text Length Statistics:
+
+Character Count:
+Mean: 136.95
+Median: 90.00
+Min: 22
+Max: 1432
+
+Word Count:
+Mean: 16.72
+Median: 11.00
+Min: 3
+Max: 153
+
+3. Script Distribution:
+Malayalam: 629 (100.00%)
+
+4. Script vs Class Distribution:
+Class      Abusive  Non-Abusive
+script                         
+Malayalam      303          326
+
+Dev Tamil Analysis:
+==================================================
+
+1. Basic Statistics:
+Total samples: 598
+
+Null Values Check:
+Text     0
+Class    0
+dtype: int64
+
+Unique Values per Column:
+Text: 598 unique values
+Class: 2 unique values
+
+Class Distribution:
+Non-Abusive: 320 (53.51%)
+Abusive: 278 (46.49%)
+
+2. Text Length Statistics:
+
+Character Count:
+Mean: 107.04
+Median: 79.50
+Min: 23
+Max: 893
+
+Word Count:
+Mean: 14.08
+Median: 11.00
+Min: 4
+Max: 116
+
+3. Script Distribution:
+Tamil: 598 (100.00%)
+
+4. Script vs Class Distribution:
+Class   Abusive  Non-Abusive
+script                      
+Tamil       278          320
+
+Train Malayalam Analysis:
+==================================================
+
+1. Basic Statistics:
+Total samples: 2933
+
+Null Values Check:
+Text     0
+Class    0
+dtype: int64
+
+Unique Values per Column:
+Text: 2933 unique values
+Class: 2 unique values
+
+Class Distribution:
+Abusive: 1531 (52.20%)
+Non-Abusive: 1402 (47.80%)
+
+2. Text Length Statistics:
+
+Character Count:
+Mean: 122.42
+Median: 84.00
+Min: 16
+Max: 2372
+
+Word Count:
+Mean: 14.94
+Median: 10.00
+Min: 2
+Max: 273
+
+3. Script Distribution:
+Malayalam: 2933 (100.00%)
+
+4. Script vs Class Distribution:
+Class      Abusive  Non-Abusive
+script                         
+Malayalam     1531         1402
+
+Train Tamil Analysis:
+==================================================
+
+1. Basic Statistics:
+Total samples: 2790
+
+Null Values Check:
+Text     0
+Class    0
+dtype: int64
+
+Unique Values per Column:
+Text: 2779 unique values
+Class: 3 unique values
+
+Class Distribution:
+Non-Abusive: 1424 (51.04%)
+Abusive: 1365 (48.92%)
+abusive: 1 (0.04%)
+
+2. Text Length Statistics:
+
+Character Count:
+Mean: 110.61
+Median: 82.00
+Min: 17
+Max: 3154
+
+Word Count:
+Mean: 14.43
+Median: 11.00
+Min: 5
+Max: 383
+
+3. Script Distribution:
+Tamil: 2790 (100.00%)
+
+4. Script vs Class Distribution:
+Class   Abusive  Non-Abusive  abusive
+script                               
+Tamil      1365         1424        1
