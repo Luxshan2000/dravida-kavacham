@@ -18,7 +18,7 @@ class AbusiveCommentClassifier(nn.Module):
         self.transformer = XLMRobertaModel.from_pretrained(model_name)
         hidden_size = self.transformer.config.hidden_size
         
-        self.attention_heads = nn.ModuleList([
+        self.attention_heads = nn.ModuleList([ 
             nn.Sequential(
                 nn.Linear(hidden_size, 256),
                 nn.Tanh(),
@@ -47,15 +47,31 @@ class AbusiveCommentClassifier(nn.Module):
         )
 
     def forward(self, input_ids, attention_mask):
+        # Step 1: Passing through the transformer model
+        print("Step 1: Passing through the transformer model")
         outputs = self.transformer(input_ids=input_ids, attention_mask=attention_mask)
         sequence_output = outputs.last_hidden_state
+        print(f"Transformer output shape: {sequence_output.shape}")
         
+        # Step 2: Applying attention heads
+        print("Step 2: Applying attention heads")
         attended_outputs = []
-        for attention in self.attention_heads:
+        for idx, attention in enumerate(self.attention_heads):
+            print(f"  Attention head {idx + 1}: Computing attention weights")
             attention_weights = attention(sequence_output)
+            print(f"    Attention weights shape: {attention_weights.shape}")
             attended_output = torch.sum(attention_weights * sequence_output, dim=1)
+            print(f"    Attended output shape: {attended_output.shape}")
             attended_outputs.append(attended_output)
         
+        # Step 3: Concatenating attended outputs
+        print("Step 3: Concatenating attended outputs")
         combined_output = torch.cat(attended_outputs, dim=1)
+        print(f"Combined output shape: {combined_output.shape}")
+        
+        # Step 4: Passing through classifier layers
+        print("Step 4: Passing through classifier layers")
         logits = self.classifier(combined_output)
+        print(f"Logits shape: {logits.shape}")
+        
         return logits
