@@ -171,4 +171,8 @@ cython_debug/
 .pypirc
 
 
-/data
+# Ignore everything under the data/ folder
+data/*
+
+# Allow only data.md
+!data/data.md
