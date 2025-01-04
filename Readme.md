@@ -8,9 +8,9 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/pypi/pyversions/tammalkavacham?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/pypi/pyversions/TamMalKavacham?logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/TensorFlow-%20-orange?logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/github/license/Luxshan2000/tammalkavacham?logo=open-source-initiative&logoColor=white" alt="License" />
+  <img src="https://img.shields.io/github/license/Luxshan2000/TamMalKavacham?logo=open-source-initiative&logoColor=white" alt="License" />
 </div>
 
 ---
