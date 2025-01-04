@@ -91,4 +91,4 @@ For questions or support, contact **Luxshan Thavarasa**:
 
 ## ⭐ Support  
 
-If you like this project, please consider giving it a ⭐ on [GitHub](https://github.com/yourusername/tammalkavacham)!  
+If you like this project, please consider giving it a ⭐ on [TamMalKavacham](https://github.com/Luxshan2000/tammalkavacham)!  
