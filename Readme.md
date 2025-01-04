@@ -57,34 +57,8 @@ else:
 
 ## 📚 Documentation  
 
-Full documentation is available at [https://yourusername.github.io/tammalkavacham](https://yourusername.github.io/tammalkavacham).  
+Full documentation is available at [Home](https://yourusername.github.io/tammalkavacham).  
 
-### API Reference  
-#### `AbuseDetector()`  
-Initialize the detector instance.  
-
-#### `.predict(text: str) -> bool`  
-Predicts whether the input text is abusive.  
-- **Parameters:**  
-  - `text` (str): Input string in Tamil or Malayalam.  
-- **Returns:**  
-  - `bool`: `True` if abusive, `False` otherwise.  
-
----
-
-## 🔧 Development  
-
-### Clone the Repository  
-```bash
-git clone https://github.com/yourusername/tammalkavacham.git
-cd tammalkavacham
-```  
-
-### Install Dependencies  
-Use [Poetry](https://python-poetry.org/) to manage dependencies:  
-```bash
-poetry install
-```
 ---
 
 ## 🌍 Supported Languages  
@@ -96,19 +70,6 @@ poetry install
 
 ---
 
-## 🤝 Contribution  
-
-Contributions are welcome! Follow the [Contribution Guidelines](CONTRIBUTING.md) for details.  
-
-### Steps to Contribute  
-1. Fork the repository.  
-2. Create a feature branch: `git checkout -b feature-name`.  
-3. Commit your changes: `git commit -m "Add feature-name"`.  
-4. Push to the branch: `git push origin feature-name`.  
-5. Open a pull request.  
-
----
-
 ## 📄 License  
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
 
@@ -116,7 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙌 Acknowledgements  
 
-Special thanks to the contributors and the open-source community for making this project possible!  
+Special thanks to the dataset authors and owners for providing the valuable resources that made this project possible!
 
 ---
 
