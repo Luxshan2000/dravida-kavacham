@@ -74,14 +74,6 @@ Special thanks to the dataset authors and owners for providing the valuable reso
 
 ---
 
-## 📧 Contact  
-
-For questions or support, contact **Luxshan Thavarasa**:  
-📧 Email: [luxshanlux2000@gmail.com](mailto:luxshanlux2000@gmail.com)  
-🌐 LinkedIn: [linkedin.com/in/luxshan-thavarasa](https://www.linkedin.com/in/luxshan-thavarasa)  
-
----  
-
 ## ⭐ Support  
 
 If you like this project, please consider giving it a ⭐ on [kavacham](https://github.com/Luxshan2000/kavacham)!
