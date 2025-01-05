@@ -78,5 +78,5 @@ jobs:
             --repo="${{ github.repository }}" \
             --title="Release ${{ env.VERSION }}" \
             --notes="**Release Notes**
-            - Kavacham version ${{ env.VERSION }} has been released to [PyPI](https://pypi.org/project/kavacham/)." \
+            - DravidaKavacham version ${{ env.VERSION }} has been released to [PyPI](https://pypi.org/project/dravida-kavacham/)." \
             --generate-notes

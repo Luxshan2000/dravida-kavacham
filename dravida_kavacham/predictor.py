@@ -5,8 +5,8 @@ import gdown
 import torch
 from transformers import XLMRobertaTokenizer
 
-from kavacham.model import _AbusiveCommentClassifier
-from kavacham.utils import _get_logger
+from dravida_kavacham.model import _AbusiveCommentClassifier
+from dravida_kavacham.utils import _get_logger
 
 MODEL_URL = "https://drive.google.com/uc?id=1RMi57aiqvQw79wlhL9IVFSqgIgBeZdMo"
 MODEL_DIR = Path.home() / ".abusedetect_model"

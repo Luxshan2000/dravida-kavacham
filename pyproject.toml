@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "kavacham"
+name = "dravida_kavacham"
 version = "0.0.0"
 description = "Abusive Content Detection"
 authors = ["Luxshan2000 <Luxshanlux2000@gmail.com>"]
 license = "MIT"
 readme = "Readme.md"
-packages = [{include = "kavacham"}]
+packages = [{include = "dravida_kavacham"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
