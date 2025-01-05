@@ -28,7 +28,7 @@ pip install dravida-kavacham
 
 ### Load the Library  
 ```python
-from dravida-kavacham import AbuseDetector
+from dravida_kavacham import AbuseDetector
 
 # Initialize the detector
 detector = AbuseDetector()
