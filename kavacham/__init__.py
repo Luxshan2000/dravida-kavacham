@@ -1,1 +1,2 @@
-"""TamMalKavacham: Abusive Content Detection for Tamil and Malayalam."""
+"""Kavacham: Abusive Content Detection."""
+from .predictor import AbuseDetector
