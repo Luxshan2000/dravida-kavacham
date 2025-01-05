@@ -1,25 +1,25 @@
 <div align="center">
     <h1>
-    Kavacham
+    DravidaKavacham
     </h1>
     <p>
-      Abusive content detection against women.
-    </p>
+        DravidaKavacham  is an open-source tool for detecting abusive content in Dravidian focused on harmful language targeting women.</p>
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/pypi/pyversions/TamMalKavacham?logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/TensorFlow-%20-orange?logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/github/license/Luxshan2000/TamMalKavacham?logo=open-source-initiative&logoColor=white" alt="License" />
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/PyTorch-2.2.0%2B-red?logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/github/license/Luxshan2000/dravida-kavacham" alt="MIT License" />
+<img src="https://img.shields.io/pypi/dm/dravida-kavacham" alt="Downloads" />
 </div>
 
 ---
 
 ## 🛠️ Installation  
 
-Install TamMalKavacham via [PyPI](https://pypi.org/project/tammalkavacham):  
+Install DravidaKavacham via [PyPI](https://pypi.org/project/dravida-kavacham)
 ```bash
-pip install tammalkavacham
+pip install dravida-kavacham
 ```  
 
 ---
@@ -28,7 +28,7 @@ pip install tammalkavacham
 
 ### Load the Library  
 ```python
-from tammalkavacham import AbuseDetector
+from dravida-kavacham import AbuseDetector
 
 # Initialize the detector
 detector = AbuseDetector()
@@ -39,7 +39,7 @@ detector = AbuseDetector()
 text = "Example abusive text in Tamil or Malayalam"
 result = detector.predict(text)
 
-if result:
+if result == "Abusive":
     print("⚠️ Abusive content detected!")
 else:
     print("✔️ Text is clean.")
@@ -52,12 +52,6 @@ else:
 - **Plug-and-Play**: No complex setup. Just install, load, and detect!  
 - **Efficient Local Processing**: Downloads the pre-trained model on first use.  
 - **Customizable**: Extendable for additional use cases with minor adjustments.  
-
----
-
-## 📚 Documentation  
-
-Full documentation is available at [Home](https://yourusername.github.io/tammalkavacham).  
 
 ---
 
@@ -81,14 +75,6 @@ Special thanks to the dataset authors and owners for providing the valuable reso
 
 ---
 
-## 📧 Contact  
-
-For questions or support, contact **Luxshan Thavarasa**:  
-📧 Email: [luxshanlux2000@gmail.com](mailto:luxshanlux2000@gmail.com)  
-🌐 LinkedIn: [linkedin.com/in/luxshan-thavarasa](https://www.linkedin.com/in/luxshan-thavarasa)  
-
----  
-
 ## ⭐ Support  
 
-If you like this project, please consider giving it a ⭐ on [TamMalKavacham](https://github.com/Luxshan2000/tammalkavacham)!  
+If you like this project, please consider giving it a ⭐ on [DravidaKavacham](https://github.com/Luxshan2000/dravida-kavacham)!
