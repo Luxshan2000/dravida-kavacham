@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kavacham"
-version = "0.1.9"
+version = "0.1.0"
 description = "Abusive Content Detection"
 authors = ["Luxshan2000 <Luxshanlux2000@gmail.com>"]
 license = "MIT"
@@ -12,11 +12,11 @@ torch = {version = "^2.2.0", optional = true}
 transformers = "^4.44.2"
 gdown = "^5.0.0"
 
-
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.2"
 black = "^24.10.0"
 flake8-pyproject = "^1.2.3"
+
 
 [tool.black]
 line-length = 88
@@ -29,6 +29,10 @@ line_length = 88
 max-line-length = 88
 exclude = ".git,__pycache__,docs,.venv,dist"
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
