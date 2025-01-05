@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "kavacham"
-version = "0.1.0"
+version = "0.0.0"
 description = "Abusive Content Detection"
 authors = ["Luxshan2000 <Luxshanlux2000@gmail.com>"]
 license = "MIT"
