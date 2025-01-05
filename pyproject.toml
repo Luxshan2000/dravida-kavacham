@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.10"
 torch = {version = "^2.2.0", optional = true}
 transformers = "^4.44.2"
+gdown = "^5.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
