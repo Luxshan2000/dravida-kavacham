@@ -15,8 +15,8 @@ gdown = "^5.0.0"
 
 [tool.poetry.group.dev.dependencies]
 isort = "^5.13.2"
-flake8 = "^7.1.1"
 black = "^24.10.0"
+flake8-pyproject = "^1.2.3"
 
 [tool.black]
 line-length = 88
@@ -27,7 +27,7 @@ line_length = 88
 
 [tool.flake8]
 max-line-length = 88
-exclude = ".git,__pycache__,docs"
+exclude = ".git,__pycache__,docs,.venv,dist"
 
 [build-system]
 requires = ["poetry-core"]
