@@ -1,10 +1,10 @@
 from pathlib import Path
-import requests
-from kavacham.model import _AbusiveCommentClassifier
+
+import gdown
 import torch
 from transformers import XLMRobertaTokenizer
-import gdown
 
+from kavacham.model import _AbusiveCommentClassifier
 
 MODEL_URL = "https://drive.google.com/uc?id=1RMi57aiqvQw79wlhL9IVFSqgIgBeZdMo"
 MODEL_DIR = Path.home() / ".abusedetect_model"
@@ -31,13 +31,19 @@ class AbuseDetector:
         self.model.load_state_dict(torch.load(MODEL_PATH, map_location=self.device))
         self.model.eval()
 
-    def predict(self,text):
-        tokenizer = XLMRobertaTokenizer.from_pretrained('xlm-roberta-base')
-        inputs = tokenizer(text, max_length=128, padding='max_length', truncation=True, return_tensors="pt")
-        
+    def predict(self, text):
+        tokenizer = XLMRobertaTokenizer.from_pretrained("xlm-roberta-base")
+        inputs = tokenizer(
+            text,
+            max_length=128,
+            padding="max_length",
+            truncation=True,
+            return_tensors="pt",
+        )
+
         with torch.no_grad():
-            input_ids = inputs['input_ids'].to(self.device)
-            attention_mask = inputs['attention_mask'].to(self.device)
+            input_ids = inputs["input_ids"].to(self.device)
+            attention_mask = inputs["attention_mask"].to(self.device)
 
             outputs = self.model(input_ids, attention_mask)
             pred = torch.argmax(outputs, dim=1).item()

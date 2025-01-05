@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset
 
+
 class _TextDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_length=128):
         self.texts = texts
@@ -15,12 +16,12 @@ class _TextDataset(Dataset):
         encoding = self.tokenizer(
             self.texts[idx],
             max_length=self.max_length,
-            padding='max_length',
+            padding="max_length",
             truncation=True,
-            return_tensors="pt"
+            return_tensors="pt",
         )
         return {
-            'input_ids': encoding['input_ids'].squeeze(0),
-            'attention_mask': encoding['attention_mask'].squeeze(0),
-            'labels': torch.tensor(self.labels[idx], dtype=torch.long)
+            "input_ids": encoding["input_ids"].squeeze(0),
+            "attention_mask": encoding["attention_mask"].squeeze(0),
+            "labels": torch.tensor(self.labels[idx], dtype=torch.long),
         }
