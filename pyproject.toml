@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "tammalkavacham"
-version = "0.1.1"
+version = "0.1.2"
 description = "Abusive Content Detection for Tamil and Malayalam"
 authors = ["Luxshan2000 <Luxshanlux2000@gmail.com>"]
 license = "MIT"
@@ -8,7 +8,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-torch = {version = "^2.5.1", optional = true}
+torch = {version = "2.5.1", optional = true}
+torch-cuda = {version = "2.4.1+cu121", optional = true}
 transformers = "4.44.2"
 
 [tool.poetry.extras]
