@@ -3,14 +3,13 @@
     kavacham
     </h1>
     <p>
-      Abusive content detection against women.
-    </p>
+        kavacham is an open-source tool for detecting abusive content in Dravidian focused on harmful language targeting women.</p>
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/pypi/pyversions/TamMalKavacham?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/pypi/pyversions/kavacham?logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/TensorFlow-%20-orange?logo=tensorflow&logoColor=white" alt="TensorFlow" />
-  <img src="https://img.shields.io/github/license/Luxshan2000/TamMalKavacham?logo=open-source-initiative&logoColor=white" alt="License" />
+  <img src="https://img.shields.io/github/license/Luxshan2000/kavacham?logo=open-source-initiative&logoColor=white" alt="License" />
 </div>
 
 ---
