@@ -28,7 +28,7 @@ class AbuseDetector:
 
     def _load_model(self):
         self._download_model()
-        self.model.load_state_dict(torch.load(MODEL_PATH))
+        self.model.load_state_dict(torch.load(MODEL_PATH, map_location=self.device))
         self.model.eval()
 
     def predict(self,text):
