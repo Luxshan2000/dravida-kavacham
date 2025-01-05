@@ -78,3 +78,4 @@ jobs:
             - Kavacham version ${{ env.VERSION }} published to PyPI.
           draft: false
           prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
