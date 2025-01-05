@@ -54,12 +54,6 @@ else:
 
 ---
 
-## 📚 Documentation  
-
-Full documentation is available at [Home](https://yourusername.github.io/tammalkavacham).  
-
----
-
 ## 🌍 Supported Languages  
 
 | Language     | Script          | Status       |  
