@@ -172,7 +172,5 @@ cython_debug/
 
 
 # Ignore everything under the data/ folder
-data/*
-
-# Allow only data.md
-!data/data.md
+/submissions
+/model
