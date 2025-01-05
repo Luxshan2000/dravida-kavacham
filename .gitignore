@@ -172,5 +172,5 @@ cython_debug/
 
 
 # Ignore everything under the data/ folder
-/submissions
-/model
+submissions/
+model/
