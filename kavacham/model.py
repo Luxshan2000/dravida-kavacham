@@ -14,7 +14,12 @@ class _AbusiveCommentClassifier(nn.Module):
         dropout_rate (float): Dropout rate for regularization.
     """
 
-    def __init__(self, model_name="xlm-roberta-base", num_classes=2, dropout_rate=0.3):
+    def __init__(
+        self,
+        model_name: str = "xlm-roberta-base",
+        num_classes: int = 2,
+        dropout_rate: float = 0.3,
+    ) -> None:
         super(_AbusiveCommentClassifier, self).__init__()
 
         self.transformer = XLMRobertaModel.from_pretrained(model_name)
@@ -48,28 +53,20 @@ class _AbusiveCommentClassifier(nn.Module):
             nn.Linear(256, num_classes),
         )
 
-    def forward(self, input_ids, attention_mask):
-        print("Step 1: Passing through the transformer model")
+    def forward(
+        self, input_ids: torch.Tensor, attention_mask: torch.Tensor
+    ) -> torch.Tensor:
         outputs = self.transformer(input_ids=input_ids, attention_mask=attention_mask)
         sequence_output = outputs.last_hidden_state
-        print(f"Transformer output shape: {sequence_output.shape}")
 
-        print("Step 2: Applying attention heads")
         attended_outputs = []
-        for idx, attention in enumerate(self.attention_heads):
-            print(f"  Attention head {idx + 1}: Computing attention weights")
+        for _, attention in enumerate(self.attention_heads):
             attention_weights = attention(sequence_output)
-            print(f"    Attention weights shape: {attention_weights.shape}")
             attended_output = torch.sum(attention_weights * sequence_output, dim=1)
-            print(f"    Attended output shape: {attended_output.shape}")
             attended_outputs.append(attended_output)
 
-        print("Step 3: Concatenating attended outputs")
         combined_output = torch.cat(attended_outputs, dim=1)
-        print(f"Combined output shape: {combined_output.shape}")
 
-        print("Step 4: Passing through classifier layers")
         logits = self.classifier(combined_output)
-        print(f"Logits shape: {logits.shape}")
 
         return logits
