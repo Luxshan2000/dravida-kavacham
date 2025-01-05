@@ -77,4 +77,4 @@ Special thanks to the dataset authors and owners for providing the valuable reso
 
 ## ⭐ Support  
 
-If you like this project, please consider giving it a ⭐ on [kavacham](https://github.com/Luxshan2000/kavacham)!
+If you like this project, please consider giving it a ⭐ on [DravidaKavacham](https://github.com/Luxshan2000/dravida-kavacham)!
