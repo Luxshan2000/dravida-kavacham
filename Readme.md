@@ -1,25 +1,25 @@
 <div align="center">
     <h1>
-    kavacham
+    DravidaKavacham
     </h1>
     <p>
-        kavacham is an open-source tool for detecting abusive content in Dravidian focused on harmful language targeting women.</p>
+        DravidaKavacham  is an open-source tool for detecting abusive content in Dravidian focused on harmful language targeting women.</p>
 </div>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/PyTorch-2.2.0%2B-red?logo=pytorch&logoColor=white" alt="PyTorch" />
-  <img src="https://img.shields.io/github/license/Luxshan2000/kavacham" alt="MIT License" />
-<img src="https://img.shields.io/pypi/dm/kavacham" alt="Downloads" />
+  <img src="https://img.shields.io/github/license/Luxshan2000/dravida-kavacham" alt="MIT License" />
+<img src="https://img.shields.io/pypi/dm/dravida-kavacham" alt="Downloads" />
 </div>
 
 ---
 
 ## 🛠️ Installation  
 
-Install kavacham via [PyPI](https://pypi.org/project/kavacham)
+Install DravidaKavacham via [PyPI](https://pypi.org/project/dravida-kavacham)
 ```bash
-pip install kavacham
+pip install dravida-kavacham
 ```  
 
 ---
@@ -28,7 +28,7 @@ pip install kavacham
 
 ### Load the Library  
 ```python
-from kavacham import AbuseDetector
+from dravida-kavacham import AbuseDetector
 
 # Initialize the detector
 detector = AbuseDetector()
