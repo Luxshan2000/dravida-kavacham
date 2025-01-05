@@ -16,7 +16,7 @@
 
 ## 🛠️ Installation  
 
-Install kavacham via [PyPI](https://pypi.org/project/kavacham):  
+Install kavacham via [PyPI](https://pypi.org/project/kavacham)
 ```bash
 pip install kavacham
 ```  
