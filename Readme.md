@@ -1,6 +1,6 @@
 <div align="center">
     <h1>
-    Kavacham
+    kavacham
     </h1>
     <p>
       Abusive content detection against women.
@@ -17,9 +17,9 @@
 
 ## 🛠️ Installation  
 
-Install TamMalKavacham via [PyPI](https://pypi.org/project/tammalkavacham):  
+Install kavacham via [PyPI](https://pypi.org/project/kavacham):  
 ```bash
-pip install tammalkavacham
+pip install kavacham
 ```  
 
 ---
@@ -28,7 +28,7 @@ pip install tammalkavacham
 
 ### Load the Library  
 ```python
-from tammalkavacham import AbuseDetector
+from kavacham import AbuseDetector
 
 # Initialize the detector
 detector = AbuseDetector()
@@ -39,7 +39,7 @@ detector = AbuseDetector()
 text = "Example abusive text in Tamil or Malayalam"
 result = detector.predict(text)
 
-if result:
+if result == "Abusive":
     print("⚠️ Abusive content detected!")
 else:
     print("✔️ Text is clean.")
@@ -91,4 +91,4 @@ For questions or support, contact **Luxshan Thavarasa**:
 
 ## ⭐ Support  
 
-If you like this project, please consider giving it a ⭐ on [TamMalKavacham](https://github.com/Luxshan2000/tammalkavacham)!  
+If you like this project, please consider giving it a ⭐ on [kavacham](https://github.com/Luxshan2000/kavacham)!
