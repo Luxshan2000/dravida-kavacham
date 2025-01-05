@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Poetry
         run: |
-          pip install poetry
+          pip install poetry==1.8.5
 
       - name: Build release distributions
         run: |
