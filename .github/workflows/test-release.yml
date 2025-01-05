@@ -1,9 +1,6 @@
 name: Release Python Package (Test Release)
 
 on:
-  push:
-    tags:
-      - "v*"
   workflow_dispatch:
 
 permissions:
