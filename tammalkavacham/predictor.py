@@ -21,7 +21,7 @@ class AbuseDetector:
         if not MODEL_PATH.exists():
             MODEL_DIR.mkdir(parents=True, exist_ok=True)
             print("Downloading model...")
-            gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
+            gdown.download(MODEL_URL, str(MODEL_PATH), quiet=False)
             print(f"Model downloaded to {MODEL_PATH}")
         else:
             print(f"Model already exists at {MODEL_PATH}")
@@ -29,7 +29,7 @@ class AbuseDetector:
     def _load_model(self):
         self._download_model()
         self.model.load_state_dict(torch.load(MODEL_PATH))
-        self.model.eval(0)
+        self.model.eval()
 
     def predict(self,text):
         tokenizer = XLMRobertaTokenizer.from_pretrained('xlm-roberta-base')
