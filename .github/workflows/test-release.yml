@@ -26,7 +26,11 @@ jobs:
       - name: Install Poetry
         run: |
           pip install poetry==1.8.5
-
+        
+      - name: Echo current working directory
+        run: |
+          echo "Current working directory: $(pwd)"
+          
       - name: Install dependencies
         run: |
           poetry install
