@@ -1,6 +1,6 @@
 from pathlib import Path
 import requests
-from tammalkavacham.model import _AbusiveCommentClassifier
+from kavacham.model import _AbusiveCommentClassifier
 import torch
 from transformers import XLMRobertaTokenizer
 import gdown
