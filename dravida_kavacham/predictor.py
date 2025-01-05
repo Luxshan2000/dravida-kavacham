@@ -12,7 +12,7 @@ MODEL_URL = "https://drive.google.com/uc?id=1RMi57aiqvQw79wlhL9IVFSqgIgBeZdMo"
 MODEL_DIR = Path.home() / ".abusedetect_model"
 MODEL_PATH = MODEL_DIR / "abusive_detector.pth"
 
-logger = _get_logger()
+logger = _get_logger(__name__)
 
 
 class AbuseDetector:
