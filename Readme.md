@@ -1,9 +1,9 @@
 <div align="center">
     <h1>
-    TamMalKavacham
+    Kavacham
     </h1>
     <p>
-      Abusive content detection against women and marginalized groups in Tamil and Malayalam languages.
+      Abusive content detection against women.
     </p>
 </div>
 
