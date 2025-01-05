@@ -3,8 +3,10 @@ import requests
 from tammalkavacham.model import _AbusiveCommentClassifier
 import torch
 from transformers import XLMRobertaTokenizer
+import gdown
 
-MODEL_URL = "https://raw.githubusercontent.com/Luxshan2000/TamMalKavacham/main/model/abusive_detector.pth"
+
+MODEL_URL = "https://drive.google.com/uc?id=1RMi57aiqvQw79wlhL9IVFSqgIgBeZdMo"
 MODEL_DIR = Path.home() / ".abusedetect_model"
 MODEL_PATH = MODEL_DIR / "abusive_detector.pth"
 
@@ -17,12 +19,9 @@ class AbuseDetector:
 
     def _download_model(self):
         if not MODEL_PATH.exists():
-            print("Downloading model...")
-            response = requests.get(MODEL_URL)
-            response.raise_for_status()
             MODEL_DIR.mkdir(parents=True, exist_ok=True)
-            with open(MODEL_PATH, "wb") as f:
-                f.write(response.content)
+            print("Downloading model...")
+            gdown.download(MODEL_URL, MODEL_PATH, quiet=False)
             print(f"Model downloaded to {MODEL_PATH}")
         else:
             print(f"Model already exists at {MODEL_PATH}")
