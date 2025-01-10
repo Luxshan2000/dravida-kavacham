@@ -45,6 +45,7 @@ else:
     print("✔️ Text is clean.")
 ```  
 
+Example notebook on Kaggle: https://www.kaggle.com/code/luxluxshan/dravida-kavacham
 ---
 
 ## 🚀 Key Features  
