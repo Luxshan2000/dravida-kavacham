@@ -36,7 +36,7 @@ detector = AbuseDetector()
 
 ### Predict Abusive Content  
 ```python
-text = "Example abusive text in Tamil or Malayalam"
+text = "மிகவும் அழகாக உள்ளது."
 result = detector.predict(text)
 
 if result == "Abusive":
